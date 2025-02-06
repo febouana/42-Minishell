@@ -49,7 +49,7 @@ To run the program:
   * `<< EOF` opens a secondary prompt, reads user input until EOF is reached, and sends it as input to the command
 
 - Environment variables:
-  * `$VAR` and "$USER" expand to their corresponding values
+  * `$VAR` and `$USER` expand to their corresponding values
 
 - User keyboard signals:
   * `Ctrl-C` interrupts the running command and displays a new prompt

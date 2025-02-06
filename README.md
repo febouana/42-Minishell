@@ -1,5 +1,5 @@
-# 42-minishell
----
+# 42-Minishell
+
 
 Minishell is the first team project in the 42 common core, focused on developing a robust parsing system to interpret and execute user commands, following the POSIX Bash model. The goal is to create a basic shell in C. We must implement builtin commands such as `pwd`, `cd`, `echo`, `env`, `export`, `unset`, and `exit`, while also supporting pipes, redirections, and environment variable expansion. Additionally, a command history system allows users to navigate through previous inputs. This is our own little Bash!
 
@@ -57,5 +57,8 @@ To run the program:
   * `Ctrl-\` does nothing
  
 ---
+* [1.Test suite for Minishell] (https://docs.google.com/spreadsheets/d/1BPW7k81LJPhGv2fbi35NIIoOC_mGZXQQJDnV0SjulFs/edit?pli=1&gid=0#gid=0)
+* [2.Test suite for Minishell] (https://docs.google.com/spreadsheets/d/1uJHQu0VPsjjBkR4hxOeCMEt3AOM1Hp_SmUzPFhAH-nA/edit?gid=0#gid=0)
+---
 
-Thanks to XXXXX, who was my partner throughout this incredibly interesting project.
+Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project.

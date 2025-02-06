@@ -1,10 +1,12 @@
 # 42-Minishell
+<br>
 
-Minishell is the first team project in the 42 common core, focused on developing a robust parsing system to interpret and execute user commands, following the POSIX Bash model. The goal is to create a basic shell in C. We must implement builtin commands such as `pwd`, `cd`, `echo`, `env`, `export`, `unset`, and `exit`, while also supporting pipes, redirections, and environment variable expansion. Additionally, a command history system allows users to navigate through previous inputs. This is our own little Bash!
+Minishell is the first team project in the 42 common core, focused on developing a robust parsing system to interpret and execute user commands, following the POSIX Bash model. The goal is to create a basic shell in C. We must implement builtin commands such as `pwd`, `cd`, `echo`, `env`, `export`, `unset`, and `exit`, while also supporting pipes, redirections, and environment variable expansion. Additionally, a command history system allows users to navigate through previous inputs. This is our own little Bash!<br>
 
 ![Image](https://github.com/user-attachments/assets/2c43779a-a2dc-4af6-9077-8470ad43644c)
 
 ## How to use
+<br>
 
 To clone the repository:
 ```
@@ -24,6 +26,7 @@ To run the program:
 ```
 
 ## Features:
+<br>
 
 - System commands accessible from the environment (`ls`, `cat`, `grep`...etc)
 - Command history navigation (using up and down arrows)
@@ -51,10 +54,12 @@ To run the program:
   * `Ctrl-\` does nothing
  
 ### Tests for Minishell:
+<br>
 
 * [1.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1BPW7k81LJPhGv2fbi35NIIoOC_mGZXQQJDnV0SjulFs/edit?pli=1&gid=0#gid=0)
 * [2.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1uJHQu0VPsjjBkR4hxOeCMEt3AOM1Hp_SmUzPFhAH-nA/edit?gid=0#gid=0)
 
 ---
 
-Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!    🚀
+Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!  🚀
+

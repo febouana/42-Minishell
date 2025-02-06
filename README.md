@@ -30,7 +30,7 @@ To run the program:
   * Command history navigation (using up and down arrows)
   * `$?` expands to the exit status of the last executed foreground command
 
-- Built-in commands:
+  Built-in commands:
   * `pwd` (no options)
   * `cd` (only with a relative or absolute path)
   * `echo` (supports the -n option)
@@ -39,16 +39,16 @@ To run the program:
   * `unset` (no options)
   * `exit` (accepts an exit code but no additional options)
 
-- Pipes:
+  Pipes:
   * `|` redirects the output of one command as input for the next
 
-- Redirections:
+  Redirections:
   * `>` redirects standard output
   * `>>` appends output to an existing file
   * `<` redirects standard input
   * `<< EOF` opens a secondary prompt, reads user input until EOF is reached, and sends it as input to the command
-
-- Environment variables:
+ 
+  Environment variables:
   * `$VAR` and `$USER` expand to their corresponding values
 
 - User keyboard signals:
@@ -61,4 +61,4 @@ To run the program:
 * [2.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1uJHQu0VPsjjBkR4hxOeCMEt3AOM1Hp_SmUzPFhAH-nA/edit?gid=0#gid=0)
 ---
 
-Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!  🚀
+Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!   🚀

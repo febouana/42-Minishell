@@ -29,7 +29,6 @@ To run the program:
   System commands accessible from the environment (`ls`, `cat`, `grep`...etc)
   Command history navigation (using up and down arrows)
   `$?` expands to the exit status of the last executed foreground command
-
   Built-in commands:
   * `pwd` (no options)
   * `cd` (only with a relative or absolute path)
@@ -38,19 +37,15 @@ To run the program:
   * `export` (no options)
   * `unset` (no options)
   * `exit` (accepts an exit code but no additional options)
-
   Pipes:
   * `|` redirects the output of one command as input for the next
-
   Redirections:
   * `>` redirects standard output
   * `>>` appends output to an existing file
   * `<` redirects standard input
   * `<< EOF` opens a secondary prompt, reads user input until EOF is reached, and sends it as input to the command
- 
   Environment variables:
   * `$VAR` and `$USER` expand to their corresponding values
-
   User keyboard signals:
   * `Ctrl-C` interrupts the running command and displays a new prompt
   * `Ctrl-D` exits the shell if no command is running

@@ -61,4 +61,4 @@ To run the program:
 * [2.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1uJHQu0VPsjjBkR4hxOeCMEt3AOM1Hp_SmUzPFhAH-nA/edit?gid=0#gid=0)
 ---
 
-Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project! 🚀
+Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!  🚀

@@ -6,7 +6,7 @@ Minishell is the first team project in the 42 common core, focused on developing
 
 To clone the repository:
 ```
-git clone --recurse-submodules git@github.com:mcombeau/minishell.git
+git clone git@github.com:justaPoet/42-Minishell.git minishell
 ```
 
 To compile:

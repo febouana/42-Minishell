@@ -5,8 +5,8 @@ Minishell is the first team project in the 42 common core, focused on developing
 <br>
 
 ![Image](https://github.com/user-attachments/assets/2c43779a-a2dc-4af6-9077-8470ad43644c)
-
 <br>
+
 ## How to use
 <br>
 

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_unset.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 22:10:13 by obouayed          #+#    #+#             */
-/*   Updated: 2024/12/25 16:45:53 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
 int	cmd_list_envp(t_env *envp)
@@ -29,7 +17,6 @@ int	cmd_list_envp(t_env *envp)
 	return (i);
 }
 
-//+ Permet de chercher puis supprimer la VAR donnee en argument
 int	search_and_del(char *var)
 {
 	int		len;
@@ -73,8 +60,7 @@ int	unset_event_not_found(char *str)
 	return (true);
 }
 
-// "minishell: unset: %s not found\n"
-// pas present dans bash posix mais nul sans
+// "minishell: unset: %s not found\n" ==> pas present dans bash posix mais nul sans
 int	ft_unset(char **cmd_param)
 {
 	if (cmd_param[1] && ft_strcmp(cmd_param[1], "") != 0)

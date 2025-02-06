@@ -1,19 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   commands.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 18:43:47 by obouayed          #+#    #+#             */
-/*   Updated: 2024/12/25 18:08:55 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-//*OKOK
-//? Initialise les paramètres de commande
 char	**init_cmd_param(t_token *token)
 {
 	char	**cmd_param;
@@ -62,9 +48,6 @@ int	verif_before_init_cmd_param(t_token *token, t_cmd *cmd)
 	return (SUCCESS);
 }
 
-//*OKOK
-//? Remplit chaque noeud de cmd avec les bonnes redirections et
-//? initialise cmd_param, si besoin.
 int	fill_cmd_nodes(t_cmd *cmd, t_token *token)
 {
 	int	new_cmd;
@@ -91,8 +74,6 @@ int	fill_cmd_nodes(t_cmd *cmd, t_token *token)
 	return (close_null_sq(), SUCCESS);
 }
 
-//*OKOK
-//? Initialise les nœuds de commandes
 int	init_cmd_nodes(t_data *data)
 {
 	t_cmd	*cmd;

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   exec.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 22:19:49 by obouayed          #+#    #+#             */
-/*   Updated: 2025/01/04 18:00:54 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
 void	parent_process(int *pip, t_cmd *cmd)
@@ -124,11 +112,3 @@ int	exec(t_data *data, t_cmd *cmd, int *pip)
 		return (cleanup(NO_CHANGE, NULL, NO_EXIT, 2));
 	return (SUCCESS);
 }
-
-// WIFEXITED ==> verifie le status
-// WEXITSTATUS ==> retourne l'exit_status
-
-//! "cat | cat | ls" avec ENTER+ENTER+ENTER
-//! "pwd > file | ls"
-
-//! re checker exit status quand SIGPIPE

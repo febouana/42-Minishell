@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/29 16:19:24 by obouayed          #+#    #+#              #
-#    Updated: 2023/11/29 16:19:24 by obouayed         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 SRC = \
 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_strcmp.c ft_strcpy.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \

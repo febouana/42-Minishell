@@ -1,19 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_cd.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 16:13:34 by febouana          #+#    #+#             */
-/*   Updated: 2024/12/25 16:57:46 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-//+ Recherche dans env la variable donnee en argument
-//+ et retourne la valeur associee
 char	*search_env_var(char *var)
 {
 	int		len;

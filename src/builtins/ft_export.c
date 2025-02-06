@@ -1,20 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_export.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 17:05:59 by febouana          #+#    #+#             */
-/*   Updated: 2025/01/04 18:01:18 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-//?OKOK
-//+ Affiche les variables exportes avec
-//+ la bonne syntaxe
 void	print_export_line(char *line)
 {
 	int	i;
@@ -38,9 +23,7 @@ void	print_export_line(char *line)
 	printf("\n");
 }
 
-//?OKOK
-//+ Permet d'exporter une nouvelle variable seule
-//+ ">export VAR"
+// ">export VAR"
 int	export_just_new_var(t_env *envp, char *var)
 {
 	char	*to_print;
@@ -66,9 +49,7 @@ int	export_just_new_var(t_env *envp, char *var)
 	return (SUCCESS);
 }
 
-//?OKOK
-//+ Permet d'exporter une nouvelle variable et sa valeur
-//+ ">export VAR=VAL"
+// ">export VAR=VAL"
 int	export_new_var_and_val(t_env *envp, char *var_and_val, int i)
 {
 	char	*to_print;
@@ -98,9 +79,7 @@ int	export_new_var_and_val(t_env *envp, char *var_and_val, int i)
 	return (free(val), free(var), SUCCESS);
 }
 
-//?OKOK
-//+ Permet d'afficher les variables exportes
-//+ ">export"
+// ">export"
 bool	export_just_display(t_data *data)
 {
 	int		count;
@@ -115,8 +94,6 @@ bool	export_just_display(t_data *data)
 	return (true);
 }
 
-//?OKOK
-// exit status OKOK
 int	ft_export(char **cmd_param)
 {
 	int		exit_status;

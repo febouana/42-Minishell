@@ -1,19 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_export_utils2.c                                 :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: febouana <febouana@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 17:08:32 by febouana          #+#    #+#             */
-/*   Updated: 2024/12/26 19:23:26 by febouana         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../../includes/minishell.h"
 
-//?OKOK
-//+ Permet de verifier les caractères valides d'une VAR d'envp
 bool	verif_var_char(char *var)
 {
 	int		i;
@@ -39,9 +25,6 @@ bool	verif_var_char(char *var)
 	return (SUCCESS);
 }
 
-//?OKOK
-//+ Permet de remplacer la valeur existante de VAR par VAL
-//! laisser return (ERROR)
 int	remplace_if_already_exist(char *var, char *val)
 {
 	char	*to_print;
@@ -69,7 +52,6 @@ int	remplace_if_already_exist(char *var, char *val)
 	return (ERROR);
 }
 
-//+ Permet de trier un char**
 void	envp_tab_bubble_sort(char **envp, int count)
 {
 	char	*temp;
@@ -90,8 +72,6 @@ void	envp_tab_bubble_sort(char **envp, int count)
 	}
 }
 
-//?OKOK
-//+ Permet de trier un tabtab contenant env et de l'afficher
 void	sort_envp_and_print(char **envp, int count)
 {
 	int	i;
@@ -111,8 +91,6 @@ void	sort_envp_and_print(char **envp, int count)
 	}
 }
 
-//?OKOK
-//+ Permet de convertir la liste env en tabtab et de la retourner
 char	**copy_envp_to_tab(t_data *data, t_env *envp)
 {
 	int		i;

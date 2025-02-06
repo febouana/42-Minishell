@@ -1,33 +1,21 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 18:03:56 by obouayed          #+#    #+#             */
-/*   Updated: 2025/01/04 17:55:59 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef MINISHELL_H
 # define MINISHELL_H
 
 # include "../Libft/get_next_line.h" // get_next_line
 # include "../Libft/libft.h"         // libft
 # include <fcntl.h>                  // open, close
+# include <stdio.h>             	// printf
 # include <limits.h>
-# include <linux/limits.h>      // INT_MAX, INT_MIN, PATH_MAX etc
-# include <readline/history.h>  // add_history
-# include <readline/readline.h> // readline
-# include <signal.h>            // signal
-# include <stdbool.h>           // bool
-# include <stdio.h>             // printf
-# include <stdlib.h>            // malloc, free, exit
-# include <sys/stat.h>          // stat
-# include <sys/types.h>         // pid_t
-# include <sys/wait.h>          // waitpid
-# include <unistd.h>            // execve, fork, pipe
+# include <linux/limits.h>      	// INT_MAX, INT_MIN, PATH_MAX etc
+# include <readline/history.h>  	// add_history
+# include <readline/readline.h> 	// readline
+# include <signal.h>            	// signal
+# include <stdbool.h>           	// bool
+# include <stdlib.h>      	      	// malloc, free, exit
+# include <sys/stat.h>          	// stat
+# include <sys/types.h>         	// pid_t
+# include <sys/wait.h>          	// waitpid
+# include <unistd.h>            	// execve, fork, pipe
 
 # define SUCCESS 0
 # define ERROR 1

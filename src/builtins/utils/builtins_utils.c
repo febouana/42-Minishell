@@ -1,19 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   builtins_utils.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 22:11:15 by obouayed          #+#    #+#             */
-/*   Updated: 2024/12/17 22:13:12 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../../includes/minishell.h"
 
-//?OKOK
-//+ Permet de free un char**
 void	ft_free_multi_array(char **tabtab)
 {
 	int	i;
@@ -30,8 +16,6 @@ void	ft_free_multi_array(char **tabtab)
 	tabtab = NULL;
 }
 
-//?OKOK
-//+ Permet de compter les lignes d'un char**
 int	ft_multi_array_len(char **s)
 {
 	int	i;
@@ -44,10 +28,6 @@ int	ft_multi_array_len(char **s)
 	return (i);
 }
 
-//?OKOK
-//+ Permet de joindre une VAR, un '=' ainsi qu'une VAL
-//+ Retourne le resultat
-//+ 2 == = et 0
 char	*join_var_and_val(char *var, char *val)
 {
 	char	*to_print;
@@ -65,8 +45,6 @@ char	*join_var_and_val(char *var, char *val)
 	return (to_print);
 }
 
-//?OKOK
-//+ Permet de compter le nombre de noeud dans la liste env
 int	count_envp_nodes(t_env *envp)
 {
 	t_env	*tmp;

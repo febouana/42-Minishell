@@ -1,25 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   cleaning.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 02:27:41 by obouayed          #+#    #+#             */
-/*   Updated: 2024/12/23 21:39:59 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-/*
-Clean the data of minishell:
-- free the data
-- set the exit status in the data
-- print a message if needed
-- exit if needed
-- return the exit status
-*/
 int	cleanup(int exit_status, char *message, int exit_call, int fd)
 {
 	t_data	*data;
@@ -49,7 +29,6 @@ int	cleanup(int exit_status, char *message, int exit_call, int fd)
 	exit(exit_call);
 }
 
-// Free the data of minishell
 void	free_data(t_data **data)
 {
 	if (!data || !(*data))
@@ -60,7 +39,6 @@ void	free_data(t_data **data)
 		free_commands(data);
 }
 
-// Free the tokens in the list
 void	free_tokens(t_data **data)
 {
 	t_token	*current;

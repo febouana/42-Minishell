@@ -1,20 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   redirection_gestion.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 17:34:17 by febouana          #+#    #+#             */
-/*   Updated: 2025/01/04 18:00:10 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-//*OKOK
-//? Initialise un fichier pour une redirection donnée
-//? parmi <, > et >>
 int	init_file(t_cmd *cmd, char *filename, int type)
 {
 	t_data	*data;

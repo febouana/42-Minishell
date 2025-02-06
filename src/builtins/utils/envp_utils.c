@@ -1,18 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   envp_utils.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 17:11:27 by febouana          #+#    #+#             */
-/*   Updated: 2024/12/25 18:26:28 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../../includes/minishell.h"
 
-//+ Detruit une liste t_env
 void	destroy_envp_list(t_env **envp)
 {
 	t_env	*current;
@@ -30,8 +17,6 @@ void	destroy_envp_list(t_env **envp)
 	*envp = NULL;
 }
 
-//?OKOK
-//+ Cherche et retourne le dernier noeud d'une liste
 t_env	*find_last_node(t_env *node)
 {
 	if (node == NULL)
@@ -41,8 +26,6 @@ t_env	*find_last_node(t_env *node)
 	return (node);
 }
 
-//?OKOK
-//+ Permet de supprimer un noeud dans la liste env
 void	del_node_envp(t_env **envp)
 {
 	t_env	*del_node;
@@ -65,8 +48,6 @@ void	del_node_envp(t_env **envp)
 	free(del_node);
 }
 
-//?OKOK
-// + Permet d'ajouter un noeud a la liste env
 int	append_node_envp(t_env **envp, char *line)
 {
 	t_env	*new_node;
@@ -93,8 +74,6 @@ int	append_node_envp(t_env **envp, char *line)
 	return (SUCCESS);
 }
 
-//?OKOK
-//+ Permet de creer un env si minishell est exec avec env -i
 int	init_env_i(t_data *data)
 {
 	char	path[PATH_MAX];

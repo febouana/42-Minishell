@@ -1,18 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   utils_token.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: obouayed <obouayed@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 00:54:43 by obouayed          #+#    #+#             */
-/*   Updated: 2024/12/23 21:13:46 by obouayed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../../includes/minishell.h"
 
-// Get the last token in the list
 t_token	*last_token(t_token *token)
 {
 	if (!token)
@@ -22,7 +9,6 @@ t_token	*last_token(t_token *token)
 	return (token);
 }
 
-// Remove quotes from the tokens
 void	remove_quotes(t_data *data)
 {
 	t_token	*token;
@@ -38,7 +24,6 @@ void	remove_quotes(t_data *data)
 	}
 }
 
-// Return the new value without quotes
 char	*return_new_value(char *value, bool squote_open, bool dquote_open)
 {
 	int		i;
@@ -64,7 +49,6 @@ char	*return_new_value(char *value, bool squote_open, bool dquote_open)
 	return (new_value);
 }
 
-// Print the tokens in the list with their values and types
 void	printf_tokens(t_data *data)
 {
 	t_token	*token;
@@ -91,7 +75,6 @@ void	printf_tokens(t_data *data)
 	}
 }
 
-// Remove backslashes from the tokens
 void	remove_backslash(t_data *data)
 {
 	t_token	*token;

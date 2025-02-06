@@ -21,7 +21,9 @@ To run the program:
 ./minishell
 ```
 
-##Features:
+
+
+## Features:
 
   * System commands accessible from the environment (`ls`, `cat`, `grep`...etc)
   * Command history navigation (using up and down arrows)
@@ -52,5 +54,7 @@ To run the program:
   * `Ctrl-C` interrupts the running command and displays a new prompt
   * `Ctrl-D` exits the shell if no command is running
   * `Ctrl-\` does nothing
+ 
+  
 
 Thanks to XXXXX, who was my partner throughout this incredibly interesting project.

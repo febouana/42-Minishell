@@ -85,8 +85,6 @@ make
 ```
 ---
 
----
-
 #### 👍 Acknowledgements
 
 Thanks to my mate [Osmaneb23](https://github.com/osmaneb23) for the great support and collaboration on Minishell!

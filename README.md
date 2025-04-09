@@ -87,7 +87,7 @@ make
 
 ---
 
-### ✋🙂‍↕️ Acknowledgements
+#### 👍 Acknowledgements
 
 Special thanks to [Osmaneb23](https://github.com/osmaneb23) for his invaluable support and contributions to this project.
 

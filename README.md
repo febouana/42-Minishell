@@ -7,13 +7,13 @@ Welcome to the **42 Minishell** project! This project is part of the **42 curric
 ## **📜 Project Overview**
 The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
 
-### ***Key Concepts:***
+### **Key Concepts:**
 - **Process Management:** Creating and managing processes using `fork` and `execve`.
 - **Signals:** Handling signals for process control.
 - **Command Parsing:** Breaking down user input into commands and arguments.
 - **Built-in Commands:** Implementing commands like `cd`, `echo`, `env`.
 
-## ***Features***
+## **Features**
 
 Our shell implementation includes the following features:
 
@@ -34,7 +34,7 @@ Our shell implementation includes the following features:
 - **Exit Status**: Supports `$?` like bash.
 - **Signal Handling**: Handles `ctrl-C`, `ctrl-D`, and `ctrl-\` to display the same results as in bash.
 
-## ***Requirements***
+## **Requirements**
 - Must **not** use external libraries.
 - Must follow **Norminette** coding standards.
 - No memory leaks allowed.

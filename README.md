@@ -89,6 +89,6 @@ make
 
 #### 👍 Acknowledgements
 
-Special thanks to [Osmaneb23](https://github.com/osmaneb23) for his invaluable support and contributions to this project.
+Thanks to my mate [Osmaneb23](https://github.com/osmaneb23) for the great support and collaboration on Minishell!
 
 ---

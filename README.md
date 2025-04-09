@@ -4,13 +4,6 @@ Welcome to the **42 Minishell** project! This project is part of the **42 curric
 
 ---
 
-## **✅ Project Validation**
-- **Validated on:** [Your Validation Date]
-- **Final Score:** [Your Final Score]
-  - Achieved **bonus part** 🎉
-
----
-
 ## **📜 Project Overview**
 The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
 
@@ -32,7 +25,6 @@ The goal of this project is to create a minimal version of a Unix shell. This in
 
 ### **Components:**
 ✅ **Mandatory Part:** Implement basic shell functionalities like parsing, executing commands, handling built-ins, and redirections.  
-🚀 **Bonus Part:** Implement advanced features like command history, advanced redirections, and job control.
 
 ### **Key Concepts:**
 - **Process Management:** Creating and managing processes using `fork` and `execve`.
@@ -43,4 +35,27 @@ The goal of this project is to create a minimal version of a Unix shell. This in
 ---
 
 ## **📂 Project Structure**
-42-Minishell/ │── src/ │ ├── builtins/ # Built-in commands implementation │ ├── executor/ # Command execution logic │ ├── parser/ # Command parsing logic │ ├── signals/ # Signal handling │ ├── utils/ # Utility functions │ ├── main.c # Entry point of the shell │── include/ │ ├── minishell.h # Header file with function prototypes and macros │── Makefile # Compilation instructions
+42-Minishell/
+│── src/
+│   ├── builtins/           # Built-in commands implementation
+│   ├── executor/           # Command execution logic
+│   ├── parser/             # Command parsing logic
+│   ├── signals/            # Signal handling
+│   ├── utils/              # Utility functions
+│   ├── main.c              # Entry point of the shell
+│── include/
+│   ├── minishell.h         # Header file with function prototypes and macros
+│── Makefile                # Compilation instructions
+
+---
+
+## **🛠️ Installation & Usage**
+To use the shell, clone the repository and compile it.
+
+### **📥 Clone & Compile**
+```sh
+git clone https://github.com/febouana/42-Minishell.git
+cd 42-Minishell
+make
+
+

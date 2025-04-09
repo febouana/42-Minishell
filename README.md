@@ -34,18 +34,21 @@ The goal of this project is to create a minimal version of a Unix shell. This in
 
 ---
 
-## **📂 Project Structure**
+## 📂 Project Structure
+
+```plaintext
 42-Minishell/
-│── src/
+├── src/
 │   ├── builtins/           # Built-in commands implementation
 │   ├── executor/           # Command execution logic
 │   ├── parser/             # Command parsing logic
 │   ├── signals/            # Signal handling
 │   ├── utils/              # Utility functions
-│   ├── main.c              # Entry point of the shell
-│── include/
-│   ├── minishell.h         # Header file with function prototypes and macros
-│── Makefile                # Compilation instructions
+│   └── main.c              # Entry point of the shell
+├── include/
+│   └── minishell.h         # Header file with function prototypes and macros
+└── Makefile                # Compilation instructions
+```
 
 ---
 

@@ -1,4 +1,4 @@
-# 🐚 42 Minishell - Your Custom Shell
+# 🐚 42 Minishell - My Custom Shell
 
 Welcome to the 42 Minishell project! This project is part of the 42 curriculum, where we build our own simple shell in C. Inspired by the Bash POSIX standard, the goal is to understand how a Unix-like shell works by recreating some of its functionalities!
 
@@ -83,5 +83,5 @@ make
 ```
 ./minishell
 ```
-
+### **🚀 Running the Shell**
 

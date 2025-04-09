@@ -7,7 +7,7 @@ Welcome to the 42 Minishell project! This project is part of the 42 curriculum, 
 ## **📜 Project Overview**
 The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
 
-### **Key Concepts:**
+### **Key Concepts**
 - **Process Management:** Creating and managing processes using `fork` and `execve`.
 - **Signals:** Handling signals for process control.
 - **Command Parsing:** Breaking down user input into commands and arguments.

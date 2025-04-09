@@ -13,7 +13,7 @@ The goal of this project is to create a minimal version of a Unix shell. This in
 - **Command Parsing:** Breaking down user input into commands and arguments.
 - **Built-in Commands:** Implementing commands like `cd`, `echo`, `env`.
 
-## **Features**
+### **Features**
 
 Our shell implementation includes the following features:
 
@@ -34,7 +34,7 @@ Our shell implementation includes the following features:
 - **Exit Status**: Supports `$?` like bash.
 - **Signal Handling**: Handles `ctrl-C`, `ctrl-D`, and `ctrl-\` to display the same results as in bash.
 
-## **Requirements**
+### **Requirements**
 - Must **not** use external libraries.
 - Must follow **Norminette** coding standards.
 - No memory leaks allowed.
@@ -73,13 +73,13 @@ Our shell implementation includes the following features:
 ## **🛠️ Installation & Usage**
 To use the shell, clone the repository and compile it.
 
-### **📥 Clone & Compile**
+## **📥 Clone & Compile**
 ```sh
 git clone https://github.com/febouana/42-Minishell.git
 cd 42-Minishell
 make
 ```
-### **🚀 Running the Shell**
+## **🚀 Running the Shell**
 ```
 ./minishell
 ```

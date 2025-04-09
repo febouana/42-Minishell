@@ -4,6 +4,9 @@ Welcome to the 42 Minishell project! This project is part of the 42 curriculum, 
 
 ---
 
+## **🏆 Project Grade**
+I received a grade of 99/100 for this project, without the bonus part.
+
 ## **📜 Project Overview**
 The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
 

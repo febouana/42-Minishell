@@ -70,16 +70,16 @@ Our shell implementation includes the following features:
 
 ---
 
-## **🛠️ Installation & Usage**
+### **🛠️ Installation & Usage**
 To use the shell, clone the repository and compile it.
 
-## **📥 Clone & Compile**
+### **📥 Clone & Compile**
 ```sh
 git clone https://github.com/febouana/42-Minishell.git
 cd 42-Minishell
 make
 ```
-## **🚀 Running the Shell**
+### **🚀 Running the Shell**
 ```
 ./minishell
 ```

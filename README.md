@@ -1,67 +1,46 @@
-# 42-Minishell
-<br>
+# 🐚 42 Minishell - Your Custom Shell
 
-Minishell is the first team project in the 42 common core, focused on developing a robust parsing system to interpret and execute user commands, following the POSIX Bash model. The goal is to create a basic shell in C. We must implement builtin commands such as `pwd`, `cd`, `echo`, `env`, `export`, `unset`, and `exit`, while also supporting pipes, redirections, and environment variable expansion. Additionally, a command history system allows users to navigate through previous inputs. This is our own little Bash!<br>
-<br>
-
-![Image](https://github.com/user-attachments/assets/2c43779a-a2dc-4af6-9077-8470ad43644c)
-<br>
-
-## How to use
-<br>
-
-To clone the repository:
-```
-git clone git@github.com:justaPoet/42-Minishell.git minishell
-```
-
-To compile:
-
-```shell
-cd minishell && make
-```
-
-To run the program:
-
-```shell
-./minishell
-```
-
-## Features:
-<br>
-
-- System commands accessible from the environment (`ls`, `cat`, `grep`...etc)
-- Command history navigation (using up and down arrows)
-- `$?` expands to the exit status of the last executed foreground command
-- Built-in commands:
-  * `pwd` (no options)
-  * `cd` (only with a relative or absolute path)
-  * `echo` (supports the -n option)
-  * `env` (no arguments or options)
-  * `export` (no options)
-  * `unset` (no options)
-  * `exit` (accepts an exit code but no additional options)
-- Pipes:
-  * `|` redirects the output of one command as input for the next
-- Redirections:
-  * `>` redirects standard output
-  * `>>` appends output to an existing file
-  * `<` redirects standard input
-  * `<< EOF` opens a secondary prompt, reads user input until EOF is reached, and sends it as input to the command
-- Environment variables:
-  * `$VAR` and `$USER` expand to their corresponding values
-- User keyboard signals:
-  * `Ctrl-C` interrupts the running command and displays a new prompt
-  * `Ctrl-D` exits the shell if no command is running
-  * `Ctrl-\` does nothing
- 
-### Tests for Minishell:
-<br>
-
-* [1.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1BPW7k81LJPhGv2fbi35NIIoOC_mGZXQQJDnV0SjulFs/edit?pli=1&gid=0#gid=0)
-* [2.Test suite for Minishell](https://docs.google.com/spreadsheets/d/1uJHQu0VPsjjBkR4hxOeCMEt3AOM1Hp_SmUzPFhAH-nA/edit?gid=0#gid=0)
+Welcome to the **42 Minishell** project! This project is part of the **42 curriculum**, where we build our own simple shell in C. The goal is to understand how a Unix-like shell works by recreating some of its functionalities.
 
 ---
 
-Thanks to [obouayed](https://github.com/osmaneb23), who was my partner throughout this incredibly interesting project!  🚀
+## **✅ Project Validation**
+- **Validated on:** [Your Validation Date]
+- **Final Score:** [Your Final Score]
+  - Achieved **bonus part** 🎉
 
+---
+
+## **📜 Project Overview**
+The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
+
+### **Requirements:**
+- Must **not** use external libraries.
+- Must follow **Norminette** coding standards.
+- No memory leaks allowed.
+- Must include a `Makefile` with rules:
+  - `all` (compile project)
+  - `clean` (remove object files)
+  - `fclean` (remove object files & executable)
+  - `re` (recompile everything)
+- **Allowed functions:**
+  - `readline`, `rl_clear_history`, `rl_on_new_line`, `rl_replace_line`, `rl_redisplay`, `add_history`
+  - `printf`, `malloc`, `free`, `write`, `access`, `open`, `read`, `close`, `fork`, `wait`, `waitpid`, `wait3`, `wait4`, `signal`, `sigaction`, `sigemptyset`, `sigaddset`, `kill`, `exit`, `getcwd`, `chdir`, `stat`, `lstat`, `fstat`, `unlink`, `execve`, `dup`, `dup2`, `pipe`, `opendir`, `readdir`, `closedir`, `strerror`, `perror`, `isatty`, `ttyname`, `ttyslot`, `ioctl`, `getenv`, `tcsetattr`, `tcgetattr`, `tgetent`, `tgetflag`, `tgetnum`, `tgetstr`, `tgoto`, `tputs`
+- **Technical restrictions:**
+  - No global variables allowed
+  - Must compile with `-Wall -Wextra -Werror`
+
+### **Components:**
+✅ **Mandatory Part:** Implement basic shell functionalities like parsing, executing commands, handling built-ins, and redirections.  
+🚀 **Bonus Part:** Implement advanced features like command history, advanced redirections, and job control.
+
+### **Key Concepts:**
+- **Process Management:** Creating and managing processes using `fork` and `execve`.
+- **Signals:** Handling signals for process control.
+- **Command Parsing:** Breaking down user input into commands and arguments.
+- **Built-in Commands:** Implementing commands like `cd`, `echo`, `env`.
+
+---
+
+## **📂 Project Structure**
+42-Minishell/ │── src/ │ ├── builtins/ # Built-in commands implementation │ ├── executor/ # Command execution logic │ ├── parser/ # Command parsing logic │ ├── signals/ # Signal handling │ ├── utils/ # Utility functions │ ├── main.c # Entry point of the shell │── include/ │ ├── minishell.h # Header file with function prototypes and macros │── Makefile # Compilation instructions

@@ -7,7 +7,7 @@ Welcome to the **42 Minishell** project! This project is part of the **42 curric
 ## **📜 Project Overview**
 The goal of this project is to create a minimal version of a Unix shell. This involves parsing and executing commands, handling signals, and managing process execution.
 
-## **💥 Features**
+## **❗ Features**
 
 Our shell implementation includes the following features:
 
